@@ -14,4 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'siteController@Home');
-Route::get('/login', 'siteController@login');
+
+Route::get('/login', 'loginController@login');
+
+Route::post('/login', 'loginController@loginValidation');
+                
